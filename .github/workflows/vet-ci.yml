@@ -26,15 +26,9 @@ jobs:
         with:
           policy: .github/vet/policy.yml
           cloud: true
-          cloud-key: ${{ secrets.SAFEDEP_CLOUD_API_KEY }}   # 🔥 Tumhara API key
-          cloud-tenant: ${{ secrets.SAFEDEP_CLOUD_TENANT_DOMAIN }}   # 🔥 Tenant domain
+          cloud-key: ${{ secrets.SAFEDEP_CLOUD_API_KEY }}   
+          cloud-tenant: ${{ secrets.SAFEDEP_CLOUD_TENANT_DOMAIN }}   
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Optional: Upload SARIF report to GitHub Security tab
-      # - name: Upload SARIF
-      #   uses: github/codeql-action/upload-sarif@v3
-      #   if: ${{ steps.vet.outputs.report != '' }}
-      #   with:
-      #     sarif_file: ${{ steps.vet.outputs.report }}
-      #     category: vet
+     

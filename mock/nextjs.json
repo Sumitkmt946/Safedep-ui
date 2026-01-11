@@ -1,0 +1,21 @@
+{
+  "package": {
+    "name": "nextjs",
+    "version": "15.5.4",
+    "ecosystem": "npm",
+    "description": "React framework for production"
+  },
+  "summary": "Next.js enables server-side rendering and static site generation.",
+  "risk": {
+    "score": 3,
+    "level": "Low"
+  },
+  "vulnerabilities": [],
+  "dependencies": [],
+  "scorecard": { "score": 9.5 },
+  "license": { "id": "Apache-2.0" },
+  "versions": [
+    { "version": "15.5.4", "published": "2024-08-10" },
+    { "version": "15.4.3", "published": "2024-07-03" }
+  ]
+}

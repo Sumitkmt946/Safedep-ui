@@ -1,0 +1,88 @@
+{
+  "package": {
+    "name": "express",
+    "version": "4.10.5",
+    "ecosystem": "npm",
+    "description": "Fast, unopinionated, minimalist web framework for Node.js"
+  },
+
+  "summary": "Express 4.10.5 is an older version and includes multiple outdated dependencies that may introduce security risks.",
+
+  "risk": {
+    "score": 5,
+    "level": "Medium"
+  },
+
+  "scorecard": {
+    "score": 7.2
+  },
+
+  "license": {
+    "id": "MIT",
+    "name": "MIT License",
+    "url": "https://opensource.org/licenses/MIT"
+  },
+
+  "vulnerabilities": [
+    {
+      "id": "GHSA-7fhm-mqm4-2wp7",
+      "summary": "Potential Denial-of-Service via malformed HTTP requests",
+      "risk": "Medium",
+      "published": "2024-06-10",
+      "modified": "2024-06-15"
+    },
+    {
+      "id": "GHSA-8x9g-2vrh-qmf7",
+      "summary": "Outdated dependency 'qs' may cause query parsing issues",
+      "risk": "Low",
+      "published": "2023-11-05",
+      "modified": "2023-11-10"
+    }
+  ],
+
+  "dependencies": [
+    { "name": "accepts", "version": "1.1.4" },
+    { "name": "content-disposition", "version": "0.5.0" },
+    { "name": "cookie", "version": "0.1.2" },
+    { "name": "cookie-signature", "version": "1.0.5" },
+    { "name": "debug", "version": "2.1.3" },
+    { "name": "depd", "version": "1.0.1" },
+    { "name": "escape-html", "version": "1.0.1" },
+    { "name": "etag", "version": "1.5.1" },
+    { "name": "finalhandler", "version": "0.3.2" },
+    { "name": "fresh", "version": "0.2.4" },
+    { "name": "media-typer", "version": "0.3.0" },
+    { "name": "merge-descriptors", "version": "0.0.2" },
+    { "name": "methods", "version": "1.1.0" },
+    { "name": "on-finished", "version": "2.1.1" },
+    { "name": "parseurl", "version": "1.3.3" },
+    { "name": "path-to-regexp", "version": "0.1.3" },
+    { "name": "proxy-addr", "version": "1.0.10" },
+    { "name": "qs", "version": "2.3.3" },
+    { "name": "range-parser", "version": "1.0.3" },
+    { "name": "send", "version": "0.10.1" },
+    { "name": "serve-static", "version": "1.7.2" },
+    { "name": "type-is", "version": "1.5.7" },
+    { "name": "utils-merge", "version": "1.0.0" },
+    { "name": "vary", "version": "1.0.1" }
+  ],
+
+  "versions": [
+    {
+      "version": "4.10.5",
+      "published": "2014-10-28"
+    },
+    {
+      "version": "4.10.4",
+      "published": "2014-10-20"
+    },
+    {
+      "version": "4.10.3",
+      "published": "2014-10-18"
+    },
+    {
+      "version": "4.10.2",
+      "published": "2014-10-10"
+    }
+  ]
+}

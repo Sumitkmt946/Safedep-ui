@@ -1,0 +1,20 @@
+{
+  "package": {
+    "name": "react",
+    "version": "18.3.0",
+    "ecosystem": "npm",
+    "description": "React library for building UI"
+  },
+  "summary": "React is a JavaScript library for building UI.",
+  "risk": {
+    "score": 2,
+    "level": "Low"
+  },
+  "vulnerabilities": [],
+  "dependencies": [],
+  "scorecard": { "score": 9.7 },
+  "license": { "id": "MIT" },
+  "versions": [
+    { "version": "18.3.0", "published": "2024-05-01" }
+  ]
+}

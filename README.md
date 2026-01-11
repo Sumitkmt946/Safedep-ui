@@ -1,5 +1,5 @@
 
-```markdown
+
 # 🔐 SafeDep UI – Open Source Package Security Dashboard  
 A clean and modern UI built with **Next.js 15**, designed to visualize open-source package security data using the **SafeDep Insights API** and **Malysis API**.
 

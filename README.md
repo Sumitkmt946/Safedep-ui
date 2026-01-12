@@ -180,7 +180,10 @@ http://localhost:3000
 
 ## 📸 Screenshots
 
-(Add your project UI screenshots here)
+<img width="1091" height="408" alt="image" src="https://github.com/user-attachments/assets/bc9d3023-f2a7-43b0-8d38-5ea270dcc0bb" />
+<img width="1081" height="634" alt="image" src="https://github.com/user-attachments/assets/c0ab0ee3-dd97-4d93-843e-92801e314980" />
+
+
 
 ---
 

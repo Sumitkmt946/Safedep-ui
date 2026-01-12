@@ -22,10 +22,37 @@ export default async function Page({ params }: PageProps) {
   const data = await getPackageData(ecosystem, name, version);
 
   return (
-    <div className="max-w-6xl mx-auto py-10 space-y-6">
+    <div className="max-w-6xl mx-auto py-8 space-y-6">
       <PackageHeader data={data} />
-      <RiskCard score={data?.risk?.score ?? 0} level={data?.risk?.level ?? "Unknown"} />
-      <MetricsRow data={data} />
+      
+      {/* Key Metrics Cards */}
+      <div className="grid grid-cols-5 gap-4">
+        <div className="p-6 rounded-lg border bg-white shadow-sm">
+          <p className="text-sm text-gray-600 mb-2">Version</p>
+          <p className="text-2xl font-bold text-gray-900">{data?.package?.version || "N/A"}</p>
+        </div>
+        
+        <div className="p-6 rounded-lg border bg-white shadow-sm">
+          <p className="text-sm text-gray-600 mb-2">Vulnerabilities</p>
+          <p className="text-2xl font-bold text-red-600">{data?.vulnerabilities?.length || 0}</p>
+        </div>
+        
+        <div className="p-6 rounded-lg border bg-white shadow-sm">
+          <p className="text-sm text-gray-600 mb-2">OpenSSF Scorecard</p>
+          <p className="text-2xl font-bold text-green-600">{data?.metrics?.scorecard?.score || "N/A"}</p>
+        </div>
+        
+        <div className="p-6 rounded-lg border bg-white shadow-sm">
+          <p className="text-sm text-gray-600 mb-2">License</p>
+          <p className="text-2xl font-bold text-gray-900">{data?.license?.id || "N/A"}</p>
+        </div>
+        
+        <div className="p-6 rounded-lg border bg-white shadow-sm">
+          <p className="text-sm text-gray-600 mb-2">Ecosystem</p>
+          <p className="text-2xl font-bold text-gray-900">{data?.package?.ecosystem || ecosystem}</p>
+        </div>
+      </div>
+
       <PackageTabs data={data} />
     </div>
   );

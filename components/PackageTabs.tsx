@@ -8,7 +8,7 @@ import LicenseTable from "@/components/LicenseTable";
 
 export default function PackageTabs({ data }: any) {
   return (
-    <Tabs defaultValue="overview" className="w-full mt-6">
+    <Tabs defaultValue="versions" className="w-full mt-6">
 
       <TabsList className="grid w-full grid-cols-4">
         <TabsTrigger value="overview">Overview</TabsTrigger>
